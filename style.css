@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,300&family=Source+Sans+Pro&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+body{
+  min-height: 100vh;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(290deg,#21737e,#2e4996,#7b30a0);
+  overflow-y: scroll;
+}
+.container{
+  position:relative;
+  max-width: 900px;
+  max-height: none;
+  width:100%;
+  background-color: #121212;
+  border-radius: 20px;
+  padding:13px;
+  margin:100px;
+  box-shadow: 0px 5px 8px  rgb(48, 48, 48, 3);
+  
+}
+
+.container header{
+  margin: 10px;
+  text-align:center;
+  position:relative;
+  font-size: 30px;
+  font-weight:500;
+  color:#FFFFFF;
+}
+.container form{
+  position:relative;
+  min-height:490;
+  background-color:#121212;
+  margin-top: 16px;
+  padding:15px;
+  border-radius: 10px;
+}
+
+.container form .personal-details,.Address,.work-position,.file-uploader,.cover-letter{
+  margin-top: 8px ;
+  margin-bottom: 7px;
+}
+.container form .work-position{
+  display: flex;
+  flex-direction: column;
+}
+.container form .title{
+  font-size:16px;
+  font-weight: 500;
+  margin: 6px 0;
+  color: #ffffff;;
+  display:block;
+  margin-bottom: 5px;
+}
+
+.container form .fields{
+  background-color: #1D1D1F99;
+  padding:10px;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-radius: 10px;
+}
+.container form .work-position{
+  background-color: #1D1D1F99;
+  padding:10px;
+  display:flex;
+  flex-direction: column;
+  align-items:first baseline;
+  position: relative;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-radius: 10px;
+}
+.container form .work-position select{
+  margin: 5px 0px;
+  padding: 0px 15px;
+  border-radius: 7px;
+  font-size:11px;
+  font-weight: 400;
+  color:#a9a9a9;
+  height: 35px; 
+  background-color: #1b1b1d;
+  border: 1px solid #201e1e;
+  outline:none;
+}
+.container form .fields select{
+  margin: 5px 0px;
+  padding: 0px 15px;
+  border-radius: 7px;
+  font-size:11px;
+  font-weight: 400;
+  color:#a9a9a9;
+  height: 35px; 
+  background-color: #1b1b1d;
+  border: 1px solid #201e1e;
+  outline:none;
+}
+
+form .fields .input-field{
+  display:flex;
+  float: left;
+  width: 32%;
+  justify-content:space-between;
+  flex-direction: column;
+  margin:4px 0;
+}
+.gender-select select{
+  margin: 5px 0px;
+  padding: 0px 15px;
+  border-radius: 7px;
+  font-size:11px;
+  font-weight: 400;
+  color:#a9a9a9;
+  height: 35px; 
+  background-color: #1b1b1d;
+  border: 1px solid #201e1e;
+  outline:none;
+  transition: 1s;
+}
+input[type=file]::file-selector-button{
+  margin: 5px 0px;
+  padding: 0px 15px;
+  border-radius: 7px;
+  font-size:11px;
+  font-weight: 400;
+  color:#a9a9a9;
+  height: 35px; 
+  background-color: #1b1b1d;
+  border: 1px solid #201e1e;
+  outline:none;
+}
+input[type=file]::file-selector-button:hover {
+  background-color: #2b2b2b;
+  border: 2px solid #292929;
+}
+.input-field input{
+  
+  outline:none;
+  font-size:11px;
+  font-weight: 400;
+  color:#a9a9a9;
+  background-color: #1b1b1d;
+  border: 1px solid #201e1e;
+  padding: 0 15px;
+  height: 35px; 
+  margin: 5px 0; 
+  border-radius: 7px;
+}
+.input-field label{
+  margin:0;
+  padding:0;
+  font-size: 11px;
+  font-weight: 400;
+  color:#b3b3b3;
+}
+
+.radio-buttons label{
+
+  flex-wrap: wrap;
+  font-size: 13px;
+  font-weight: 400;
+  color:#3e3e3e;
+}
+.submit-button {
+  background-color: rgb(90, 141, 192);
+  padding: 10px;
+  text-align: center;
+  content: center;
+  color: rgb(255, 255, 255);
+  border: none;
+  height: 32px;
+  width: 90;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.container form .Dropdown-list,.file-uploader,.dropdown{
+  background-color: #1D1D1F99;
+  padding:10px;
+  display:flex;
+  border-radius: 10px;
+}
+.container form .radio-buttons{
+  background-color: #1D1D1F99;
+  padding:10px;
+  border-radius: 10px;
+}
+
+
+.fileinput{
+  color: #a9a9a9;
+}
+.radio-buttons label{
+  color:#a9a9a9;
+}
+
+.txtarea textarea{
+  width:100%;
+  height:59px;
+  padding:15px;
+  outline: none;
+  resize: none;
+  font-size: 13px;
+  border-radius: 6px;
+  color:#a9a9a9;
+  border: 1px solid #201e1e;
+  background-color: #1b1b1d;
+
+}
+textarea:is(:focus, :valid){
+  border-width: 2px;
+  padding:12px;
+  border-color: #4671EA;
+}
+
+input:is(:focus, :valid){
+  border-width: 2px;
+  padding:12px;
+  border-color: #4671EA;
+}
+.submit-button{
+  position: relative;
+  width: 99%;
+  height: 40px;
+}
+.form .column{
+  display:flex;
+  column-gap: 15px;
+}
+@media screen and (max-width: 600px) {
+  .form .column{
+    flex-wrap: wrap;
+  }
+}

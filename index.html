@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="device-width initialscale=1.0">
+    <title>Registration Form</title>
+
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+
+  <body>
+    <div class="container">
+      <header>Registration Form</header>
+      <form action="#" method="post" enctype="multipart/form-data">
+
+        <div class="form">
+
+          <div class="personal-details">
+            <span class="title">Personal Details</span>
+            
+            <div class="fields">
+                
+              <div class="input-field">
+                <label>Name</label>
+                <input type="text" placeholder="Enter your First Name"  required>
+              </div>
+                
+              <div class="input-field">
+                <label>Last Name</label>
+                <input type="text" placeholder="Enter your Last Name"  required>
+               </div>         
+
+              <div class="input-field">
+                <label>Date of Birth</label>
+                <input type="date" placeholder="" required>               
+              </div>
+
+              <div class="input-field">
+                <label>Email</label>
+                <input type="email" placeholder="Enter your Email" required>               
+              </div>
+
+              <div class="input-field">
+                <label>Phone Number</label>
+                <input type="tel" placeholder="ex. 0929-4711333" pattern="[0-9]{4}-[0-9]{7}" required>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="Address">
+            <span class="title">Address</span>
+            
+            <div class="fields">
+              <div class="input-field">      
+                <label>Street Address</label>         
+                <input type="text" placeholder="block no./street/brgy" required>
+              </div>
+              <div class="input-field">      
+                <label>Street Address Line 2</label>         
+                <input type="text" placeholder="block no./street/brgy" required>
+              </div>
+                
+              <div class="input-field">
+                <label>City</label>
+                <select name="" id="city-list" required>
+                  <option value="">-- Select City --</option>
+                  <option value="">Caloocan</option>
+                  <option value="">Las Pinas</option>
+                  <option value="">Makati</option>
+                  <option value="">Malabon</option>
+                  <option value="">Mandaluyong</option>
+                  <option value="">Manila</option>
+                  <option value="">Marikina</option>
+                  <option value="">Muntinlupa</option>
+                  <option value="">Navotas</option>
+                  <option value="">Paranaque</option>
+                  <option value="">Pasay</option>
+                  <option value="">Pasig</option>
+                  <option value="">Pateros</option>
+                  <option value="">Quezon City</option>
+                  <option value="">San Juan</option>
+                  <option value="">Taguig</option>
+                  <option value="">Valenzuela</option>
+
+                </select> 
+               </div>         
+
+              <div class="input-field">
+                <label>State/Province</label>
+                <select name="" id="state-list">
+                  <option value="">-- Select State --</option>
+                  <option value="">Metro Manila</option>
+                </select>               
+              </div>        
+                <div class="input-field">
+                  <label>Zip Code</label>
+                  <input type="tel" placeholder="ex. 0929" pattern="[0-9]{4}" required>
+                </div>             
+             
+            </div>
+          </div><br>
+
+          <div class="work-position">   
+            <span class="title">Applying Position</span>                   
+            <div class="input-field">                                     
+                <select name="positions" required>
+                  <option value="Director">Director</option>
+                  <option value="Manager">Manager</option>
+                  <option value="Janitor">Janitor</option>
+                  <option value="Comp">Intern</option>
+                  <option value="Comp">Supervisor</option>
+                </select>
+            </div><br>
+            
+            <span class="title">Type Of Work</span> 
+            <div class="radio-buttons" required>
+              <div>
+                <input type="radio" style="vertical-align: middle" name="work" id="rad1" value="" required>
+                <label class=rad-label for="rad1">Permanent</label>
+              </div>
+              <div>
+                <input type="radio" style="vertical-align: middle" name="work" id="rad2" value="" required>
+                <label class=rad-label for="rad2">Both</label>
+              </div>
+              <div>
+                <input type="radio" style="vertical-align: middle" name="work" id="rad3" value="" required>
+                <label class=rad-label for="rad3">Other</label>
+              </div>
+              <div>
+                <input type="radio" style="vertical-align: middle" name="work" id="rad4" value="" required>
+                <label class=rad-label for="rad4">Temporary</label>
+              </div>
+            </div>
+          </div><br>
+
+          <span class="title">Please Upload Resume</span> 
+          <div class="file-uploader">
+            <input type="file"  class="fileinput"id="myfile" name="myfile" required>
+          </div><br>
+
+          <span class="title">Cover Letter or Additional Information</span>
+          <div class="txtarea">
+            <textarea placeholder="Type Here..." required></textarea>
+          </div><br>
+
+          <span class="title">Veteran Status (Please select the option that describes your status the best)</span> 
+          <div class="radio-buttons" required>            
+                <div>
+                  <input type="radio" style="vertical-align: middle" name="veteran-status" id="rad1" value="" required>
+                  <label class=rad-label for="rad1">I am a veteran</label>
+                </div>
+                <div>
+                  <input type="radio" style="vertical-align: middle" name="veteran-status" id="rad2" value="" required>
+                  <label class=rad-label for="rad2">I am a recently separated veteran</label>
+                </div>
+                <div>
+                  <input type="radio" style="vertical-align: middle" name="veteran-status" id="rad3" value="" required>
+                  <label class=rad-label for="rad3">I am not a veteran</label>
+                </div>                     
+              
+          </div><br>
+          <span class="title">Gender</span>
+          <div class="gender-select">
+            <select name="genders" required>
+              <option value="F">Female</option>
+              <option value="M">Male</option>
+              <option value="TF">Transgender Female</option>
+              <option value="TM">Transgender Male</option>
+              <option value="NA">Prefer Not to Answer</option>
+              <option value="NL">Not Listed</option>
+            </select>
+          </div>
+        </div><br>
+        <span class="title">Disabilities</span>
+        <div class="radio-buttons">
+            <div>
+              <input type="radio" style="vertical-align: middle" name="Disabilities" id="rad1" value="" required>
+              <label class=rad-label for="rad1">I have no disability</label>
+            </div>
+            <div>
+              <input type="radio" style="vertical-align: middle" name="Disabilities" id="rad2" value="" required>
+              <label class=rad-label for="rad2">I have two or more impairments and/or disabling medical conditions.</label>
+            </div>
+            <div>
+              <input type="radio" style="vertical-align: middle" name="Disabilities" id="rad3" value="" required>
+              <label class=rad-label for="rad3">I have a Specific Learning Difficulty (e.g. Dyslexia/Dyspraxia/AD(H)D)</label>
+            </div>
+            <div>
+              <input type="radio" style="vertical-align: middle" name="Disabilities" id="rad4" value="" required>
+              <label class=rad-label for="rad4">I have a social/communication impairment such as Asperger's syndrome/other autistic spectrum disorder</label>
+            </div>
+            <div>
+              <input type="radio" style="vertical-align: middle" name="Disabilities" id="rad5" value="" required>
+              <label class=rad-label for="rad5">I have a long standing illness or health condition such as cancer, HIV, diabetes, chronic heart disease, or epilepsy</label>
+            </div>
+            <div>
+              <input type="radio" style="vertical-align: middle" name="Disabilities" id="rad6" value="" required>
+              <label class=rad-label for="rad6">I have a physical impairment or mobility issues (e.g. difficulty using arms/using a wheelchair or crutches)</label>
+            </div>
+            <div>
+              <input type="radio" style="vertical-align: middle" name="Disabilities" id="rad7" value="" required>
+              <label class=rad-label for="rad7">I am deaf or have a serious hearing impairment</label>
+            </div>
+            <div>
+              <input type="radio" style="vertical-align: middle" name="Disabilities" id="rad8" value="" required>
+              <label class=rad-label for="rad8">I am blind or have a serious visual impairment uncorrected by glasses</label>
+            </div>
+            <div>
+              <input type="radio" style="vertical-align: middle" name="Disabilities" id="rad9" value="" required>
+              <label class=rad-label for="rad9">Prefer not to answer</label>
+            </div>
+            <div>
+              <input type="radio" style="vertical-align: middle" name="Disabilities" id="rad10" value="" required>
+              <label class=rad-label for="rad10">I have a disability, impairment or medical condition not listed here</label>
+            </div>
+
+        </div><br>
+        <span class="title">Race</span>
+        <div class="radio-buttons">
+            <div>
+              <input type="radio" style="vertical-align: middle" name="Race" id="rad1" value="" required>
+              <label class=rad-label for="rad1">American Native or Alaska Native</label>
+            </div>
+            <div>
+              <input type="radio" style="vertical-align: middle" name="Race" id="rad2" value="" required>
+              <label class=rad-label for="rad2">Black or African American</label>
+            </div>
+            <div>
+              <input type="radio" style="vertical-align: middle" name="Race" id="rad3" value="" required>
+              <label class=rad-label for="rad3">White</label>
+            </div>
+            <div>
+              <input type="radio" style="vertical-align: middle" name="Race" id="rad4" value="" required>
+              <label class=rad-label for="rad4">Asian</label>
+            </div>
+            <div>
+              <input type="radio" style="vertical-align: middle" name="Race" id="rad5" value="" required>
+              <label class=rad-label for="rad5">Native Hawaiian or Other Pacific Islander</label>
+            </div>
+            <div>
+              <input type="radio" style="vertical-align: middle" name="Race" id="rad6" value="" required>
+              <label class=rad-label for="rad6">Two or more races</label>
+            </div>
+            <div>
+              <input type="radio" style="vertical-align: middle" name="Race" id="rad7" value="" required>
+              <label class=rad-label for="rad7">Decline to specify</label>
+            </div>
+            <div>
+              <input type="radio" style="vertical-align: middle" name="Race" id="rad8" value="" required>
+              <label class=rad-label for="rad8">Other</label>
+            </div>
+        </div><br>
+
+        <span class="title">Additional Notes</span>
+        <div class="txtarea">
+          <textarea placeholder="Type Here..." required></textarea>
+        </div><br>
+
+      <button class="submit-button" onclick="messagebox()">Submit</button>
+      </form>
+    </div>
+  </body>
